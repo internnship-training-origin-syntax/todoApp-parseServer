@@ -1,18 +1,23 @@
 <template>
   <div id="app">
+    <Login/>
     <img alt="Vue logo" src="./assets/logo.png">
     <p class="title">Vue.js Todo List</p>
     <todo-list />
+    
   </div>
 </template>
 
 <script>
 import TodoList from "./components/TodoList.vue";
 
+import Login from "./components/Login.vue";
+
 export default {
   name: "app",
   components: {
-    TodoList
+    TodoList,
+    Login
   }
 };
 </script>
